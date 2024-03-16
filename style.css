@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html.body{
+    width: 100%;
+    height: 100%;
+}
+/* this is the page od the website */
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f2cc8f;
+    position: relative;
+    padding: 0 2vw;
+}
+
+/* this is the navbar of the web page */
+nav{
+    padding: 0.1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    color: grey;
+    margin-right: 25px;
+}
+
+.nav-part2 h4{
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+.nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transition: all ease 0.4s;
+}
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+.nav-part2 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 10;
+}
+.nav-part2 h4:hover a{
+    color: white;
+}
+
+/* this is the body page */
+#center{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom:1px solid black ;
+
+}
+#left h3{
+    width: 30vw;
+    font-size: 1.8vw;
+    margin-left:10px;
+    margin-bottom: 25px;
+    line-height: 2vw;
+}
+#right h1{
+    line-height: 8vw;
+    font-size: 10vw;
+    margin-bottom: 5px;
+    text-align: right;
+}
+/* this is the animation above the video */
+#hero-shape{
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    background: #669bbc;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0;
+    top: 62vh;
+    filter: blur(20px);
+    animation-name: anime;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+@keyframes anime{
+    from{
+        transform: translate(10%,10%);
+    }
+    to{
+        transform: translate(15%,15%);
+    }
+}
+#hero-1{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #669bbc;
+    position: absolute;
+    animation-name: anime1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(20px);
+}
+@keyframes anime1{
+    from{
+        transform: translate(-15%,-5%);
+    }
+    to{
+        transform: translate(5%,15%);
+    }
+}
+
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #669bbc;
+    position: absolute;
+    animation-name: anime2;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     filter: blur(20px);
+}
+
+@keyframes anime2{
+    from{
+        transform: translate(-55%,2%);
+    }
+    to{
+        transform: translate(0%,-10%);
+    }
+}
+
+ /* this is the video */
+ #page1 video{
+    width: 100%;
+    border-radius: 25px;
+    margin-top:15px ;
+    box-shadow: 0 5px 5px 10px;
+    position: relative;
+ }
