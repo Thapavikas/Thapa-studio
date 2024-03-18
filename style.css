@@ -264,12 +264,23 @@ nav{
         transform: translate(-10%,10%)skew(-12deg);
     }
 }
+
  /* this is page3 */
+
  #page3{
     min-height: 100vh;
     width: 100%;
     background-color: #f2cc8f;
     padding: 4vw 0;
+ }
+
+ #page3-tag{
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 1rem;
  }
 
  #elem{
@@ -282,11 +293,13 @@ nav{
     position: relative;
     overflow: hidden;
  }
+
  #elem h1{
     font-size: 3vw;
     position: relative;
     z-index: 10;
  }
+
  #elem:hover .overlay{
     top: 0;
  }
@@ -300,6 +313,7 @@ nav{
     top: -100%;
     transition: all 0.2s ease;
  }
+
  #fixed-image{
     height: 30vw;
     width: 24vw;
@@ -313,35 +327,83 @@ nav{
     background-size: cover;
     display: none;
  }
+
  /* this is page4 */
+
  #page4{
-    width: 100%;
     height: 100vh;
-    background-color: #f2cc8f;
-    border: 2px solid red ;
- }
- #page4-div{
-    text-align: center;
-    padding: 5vw 5vw;
-    height: 100%;
-    width: 40%;
-    /* border: 1px solid red ; */
-    background-color: #000;
- }
- #page4-div h2{
-    font-size: 4vw;
-    text-align: justify;
-    a{
-        text-decoration: none;
-        color: white;
-    }
+    width: 100%;
+    min-height: 100vh;
+    background-color:#f2cc8f;
  }
 
- #page4-div1 {
-    margin: 20px;
-    color: white;
-    text-align: justify;
+ #page4-box{
+    margin-left: 2.5%;
+    position: relative;
+    height: 100%;
+    width: 95%;
+    background-color: #1d1c1c;
+    border-radius: 20px;
  }
+
+ #page4-div{
+    width: 40%;
+    position: relative;
+    left: 3rem;
+    padding: 30px;
+    white-space: nowrap     ;
+ }
+
+ #page4-div a{
+    width: 40%;
+    font-size: 5vw;
+    color: gray;
+    font-weight: 800;
+    transition: all ease 0.4s;
+ }
+
+ #page4-div a:hover{
+    color: white;
+ }
+
+ #page4-div1 span{
+    width: 40%;
+    text-align: start;
+    font-size: 1.5vw;
+    color: white;
+    padding-left:5%;
+ }
+
+#design{
+    display: block;
+}
+
+#project{
+    display: none;
+}
+
+#execution{
+    display: none;
+}
+
+/* this is image for page4 */
+
+#page4-img img{
+    box-shadow: 10px 0px 5px 5px;
+    height: 100%;
+    width: 600px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+#project1{
+    display: none;
+}
+#execution1{
+    display: none;
+}
 
 /* this is page5 */
  #page5{
