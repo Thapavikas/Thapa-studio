@@ -19,7 +19,7 @@ elems.forEach(function(e){
     fixed.style.backgroundImage=`url(${image})`
     })
 })
-
+// this is the scrollbarnd
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 40,

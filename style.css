@@ -11,10 +11,7 @@ html.body{
     width: 100%;
     height: 100%;
 }
-#main{
-    position: relative;
-    z-index: 12;
-}
+
 /* this is the page od the website */
 
 #page1{
@@ -319,15 +316,47 @@ nav{
  /* this is page4 */
  #page4{
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background-color: #f2cc8f;
+    border: 2px solid red ;
+ }
+ #page4-div{
+    text-align: center;
+    padding: 5vw 5vw;
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid red ; */
+    background-color: #000;
+ }
+ #page4-div h2{
+    font-size: 4vw;
+    text-align: justify;
+    a{
+        text-decoration: none;
+        color: white;
+    }
  }
 
+ #page4-div1 {
+    margin: 20px;
+    color: white;
+    text-align: justify;
+ }
+
+/* this is page5 */
  #page5{
     width: 100%;
     height: 100vh;
     padding: 8vw 2vw;
     background-color: #f2cc8f;
+ }
+ #page5 h1{
+    width: 15vw;
+    padding: 5px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
  }
  .swiper {
     width: 100%;
@@ -347,24 +376,20 @@ nav{
     color: black;
   }
 
-#page6{
-    height: 100vh;
-    width: 100%;
-}
 /* this is the footer */
+
  #footer{
     height:100vh;
     width: 100%;
-    position: sticky;
+    position: relative;
     background-color:black;
     color: white;
-    z-index: 10;
-    bottom: 0;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     padding: 1vw 3vw;
  }
+
  #footer h1{
     font-size: 12vw;
     position: relative;
@@ -372,7 +397,6 @@ nav{
  }
 
  #footer-div{
-    height: 20vh;
     width: 100%;
     position: relative;
     bottom: 8rem;
