@@ -11,7 +11,12 @@ html.body{
     width: 100%;
     height: 100%;
 }
+#main{
+    position: relative;
+    z-index: 12;
+}
 /* this is the page od the website */
+
 #page1{
     min-height: 100vh;
     width: 100%;
@@ -157,7 +162,7 @@ nav{
  #page1 video{
     width: 100%;
     border-radius: 25px;
-    margin-top:15px ;
+    margin-top:45px ;
     box-shadow: 0 5px 5px 10px;
     position: relative;
  }
@@ -288,6 +293,7 @@ nav{
  #elem:hover .overlay{
     top: 0;
  }
+
  .overlay{
     height: 100%;
     width: 100%;
@@ -297,21 +303,187 @@ nav{
     top: -100%;
     transition: all 0.2s ease;
  }
-
- #elem-container{
-
- }
-
  #fixed-image{
     height: 30vw;
     width: 24vw;
     border-radius: 20px;
+    box-shadow: 10px 10px 5px 5px ;
     position: fixed;
     left: 50%;
-    top: 25%;
+    top: 15%;
     z-index: 99;
     background-position: center;
     background-size: cover;
     display: none;
  }
- 
+ /* this is page4 */
+ #page4{
+    width: 100%;
+    height: 60vh;
+    background-color: #f2cc8f;
+ }
+
+ #page5{
+    width: 100%;
+    height: 100vh;
+    padding: 8vw 2vw;
+    background-color: #f2cc8f;
+ }
+ .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 30%;
+    font-size: 18px;
+    border-right: 1px solid #3e3d3d;
+  }
+  .swiper-slide p{
+    margin-top: 2rem;
+    height: 20vw;
+    width: 70%;
+    text-align: start;
+    color: black;
+  }
+
+#page6{
+    height: 100vh;
+    width: 100%;
+}
+/* this is the footer */
+ #footer{
+    height:100vh;
+    width: 100%;
+    position: sticky;
+    background-color:black;
+    color: white;
+    z-index: 10;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 3vw;
+ }
+ #footer h1{
+    font-size: 12vw;
+    position: relative;
+    z-index: 9
+ }
+
+ #footer-div{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+ }
+
+ #footer-div h2{
+    text-align: justify;
+    position: relative;
+    z-index: 9;
+ }
+
+ #footer-div1{
+    font-size: 1vw;
+    text-align: justify;
+    position: relative;
+    z-index: 9;
+ }
+
+ #footer-div1 input{
+    height: 3vw;
+    width: 20vw;
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid white;
+ }
+
+ #footer-div1 input::placeholder{
+    color: white;
+ }
+
+
+
+ #footer-bottom{
+    border-top:1px solid white ;
+    height: 10vh;
+    width: 100%;
+ }
+
+ #footer-bottom ul{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        list-style: none;
+       
+    }
+ }
+ #footer-bottom a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+ #footer-bottom a:hover{
+    text-decoration: underline;
+ }
+
+ #circle1{
+    position: absolute;
+    bottom: 25%;
+    left: 60%;
+    height: 65vh;
+    width: 30%;
+    border-radius: 50%;
+    background:linear-gradient(#f4a261,#a9def9);
+    filter: blur(12px);
+    animation-name: circle1;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+ }
+ @keyframes circle1{
+    from{
+        transform: translate(-45%,-25%);
+    }
+    to{
+        transform: translate(-30%,-40%);
+    }
+ }
+ #circle2{
+    position: absolute;
+    bottom: 8rem;
+    height: 65vh;
+    width: 30%;
+    border-radius: 50%;
+    background:linear-gradient(#cdb4db,#fb8500);
+    filter: blur(12px);
+    animation-name: circle2;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+
+ @keyframes circle2{
+    from{
+        transform: translate(35%,30%);
+    }
+    to{
+        transform: translate(-10%,-5%);
+    }
+ }
+

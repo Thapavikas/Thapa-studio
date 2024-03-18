@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
 
 let elemC = document.querySelector("#elem-container")
 let fixed = document.querySelector("#fixed-image")
@@ -19,3 +19,9 @@ elems.forEach(function(e){
     fixed.style.backgroundImage=`url(${image})`
     })
 })
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+      });
+
