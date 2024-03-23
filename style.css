@@ -74,7 +74,7 @@ nav{
     color: white;
 }
 
-/* this is the body page */
+/* this is the body page1 */
 #center{
     height: 65vh;
     width: 100%;
@@ -82,8 +82,8 @@ nav{
     align-items: flex-end;
     justify-content: space-between;
     border-bottom:1px solid black ;
-
 }
+
 #left h3{
     width: 30vw;
     font-size: 1.8vw;
@@ -96,6 +96,31 @@ nav{
     font-size: 10vw;
     margin-bottom: 5px;
     text-align: right;
+}
+
+@media (max-width:600px){
+    #center{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom:1px solid black ;
+    }
+
+    #left h3{
+        width: 30vw;
+        font-size: 1.8vw;
+        margin-left:10px;
+        margin-bottom: 25px;
+        line-height: 2vw;
+    }
+    #right h1{
+        line-height: 8vw;
+        font-size: 10vw;
+        margin-bottom: 5px;
+        text-align: right;
+    }
 }
 /* this is the animation above the video */
 #hero-shape{
